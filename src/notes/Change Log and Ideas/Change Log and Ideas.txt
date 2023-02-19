@@ -1,0 +1,144 @@
+Finished ideas:
+	Rotating asteroids based on hit location and angle
+	Randomized astroid trajectories
+	invincibility upon hitting and iFrames
+	Recoil and screen shake from shooting
+	Boulders movement and trajectory change on hit, and amount of change is based on boulder strength/size
+	Particle effects on movement and boulder hit (boulder particles move based on shot trajectory and location of collision)
+	Created paralax background
+	Created astroid variation (way too mundane if just one type of asteroid)
+	Looping room mechanic
+	Fixed looping mechanic where player only loops when going left or up (now includes down and right)
+	Created a basic enemy and made minor tweaks to make it fair
+	Fixed paralax background from freaking out when moving too far in one direction
+	Created script to help with object movement
+	Changed bullets from a frame lifetime system to a pixel range system (easier to control)
+	Converted bullets to have a speed and direction system instead of hsp and vsp system 
+	Fixed asteroid from spinning in wrong direction when shot from the left side
+	Tweaked Asteroid strength/size/speed ratios
+	MAP - Press M to hide/show map, shows asteroids and enemies
+	Created spawn limits
+	Pivot points for big enemy (2 specific spots for shooting)
+	Removed dependency on oPlayer instance on death
+	Created beta menu
+	Added $ for score, highscores are determined off of total $ gained, calculated in background
+	Created overall spawn caps to aid with level seperation
+	Level system (along with 5 levels, and an unpolished default level)
+	Enemies now increase in hp the higher the level
+	HP bars for both player and enemies (not asteroids)
+	damage variable
+	damage increase for enemies (NOT ASTEROIDS) as levels go up
+	Create cool shaking mini-animation when player reaches next level
+	Created coin system instead of automatic money system
+	Created player gravity for coins
+	Increase coin drops as levels increase
+	Created first boss (boss body, map icon, small turret, big turret, and big bullets)
+	Animated small turrets, big turrets, and big bullets
+	Added knockback to big bullets
+	Implemented boss to level system and added 4 more levels
+	Added spawning script to help with code readability
+	Improved enemy movement (every 3 seconds change destination to prevent grouping)
+	Created a full currency system (way more than this project might ever actually need) (view list/map at bottom of log)
+	Fixed coin spread and movement upon enemy death and coin spawning
+	
+Player has prompt to press spacebar (or to shoot) to start next level
+Remove control from player and pause all movement upon upgrade screen
+
+Enemies change trajectory after getting hit
+
+Make sure to reset:
+	Starting level
+	Player damage
+
+Player can only open upgrades during a safe space before starting next level (probably with space bar)
+	
+Multiple stages of boss attacks
+Shoot cooldown decreases as boss health depletes (either in stages or smoothly)
+
+Enemy bombs (shoot to explode or push)
+small homing to make hitting enemies a little more fair/easy
+Nerf base stats of enemies
+Make hitbox of asteroids circular
+
+Make child objects of boss to have a "parent id" variable so they become reusable
+
+Make coins fly around more on bigger enemies such as bosses
+
+Have player pushed out of big bullets
+	
+
+Perfect the transition
+
+Boss and mini-boss icons for Map
+Maybe small icon for bullets on map
+	
+Add next and goto to transition event
+
+Create looping level mechanic (primarily meant for bosses, as bosses cycle)
+	
+Change spawner to set random x/y on spawner event and NOT in the asteroid object itself
+
+Have a smarter enemy that shoots ahead of player
+
+Home store costs same as in-game store, but home current increases at very slow rate (1:100 or 1:1000)
+
+Tweak things for slow exponential growth rather than linear (both enemies and player upgrades alike)
+
+Slow down movement
+Bomb that removes everything on screen
+
+Make map a 1 pixel sprite for small performance boost
+
+increase width of walls in map, or find some way to stop drawing parts of the marker that go off the map
+
+Direction-based movement (makes diagonal movement the same speed as cross movement)
+
+Transition object
+
+enemy hit particle effects
+multiple layers of "cracking" in meteors to show damage (maybe something similar on enemy ships as well);
+meteors spread when destroyed when strength is above a certain value
+
+maybe a regenerating shield system
+
+Lazers and Missles
+	
+Different enemy types
+
+Bosses
+
+Save/Load System
+
+Maybe a mix of arcade and rogue-like (some form of currency and upgrades transfer between attempts)
+
+Upgrades and multiple shoot types
+Overheating effect
+Overall upgrades
+
+Save system
+Save Encryption
+
+Improve ship movement (make diagonals better) (speed and direction system instead of hsp/vsp system)
+
+
+
+
+Currency sprites and values
+	Bronze Coin		$1
+	Bronze Bag		$10
+	Bronze Bar		$100
+	Bronze Safe		$1,000 (thousand)
+	Silver Coin		$10,000
+	Silver Bag		$100,000
+	Silver Bar		$1,000,000 (million) -> typical digit limit for int32, but this project uses int64 for currency and score
+	Silver Safe		$10,000,000
+	Gold Coin		$100,000,000
+	Gold Bag		$1,000,000,000 (billion)
+	Gold Bar		$10,000,000,000
+	Gold Safe		$100,000,000,000
+	Platinum Coin	$1,000,000,000,000 (trillion)
+	Platinum Bag	$10,000,000,000,000
+	Platinum Bar	$100,000,000,000,000
+	Platinum Safe	$1,000,000,000,000,000 (quadrillion)
+	(int64 holds 9.223 PENTillion)
+	
